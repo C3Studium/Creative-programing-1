@@ -1,0 +1,8 @@
+allowBuilds:
+  '@ffmpeg-installer/darwin-arm64': false
+  '@parcel/watcher': false
+  core-js: false
+  sharp: false
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver

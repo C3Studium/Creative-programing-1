@@ -1,0 +1,11 @@
+.section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+
+    .canvas {
+        width: 600px;
+        height: 600px;
+        background-color: #ffff;
+    }
+}

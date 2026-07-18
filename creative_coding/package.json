@@ -1,0 +1,38 @@
+{
+  "name": "creative_coding",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check",
+    "format": "biome format --write"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "canvas-sketch": "^0.7.8",
+    "canvas-sketch-util": "^1.10.0",
+    "color-interpolate": "^2.0.0",
+    "colormap": "^2.3.2",
+    "eases": "^1.0.8",
+    "framer-motion": "^12.42.2",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "riso-colors": "^1.0.1",
+    "sass": "^1.101.0",
+    "tweakpane": "^4.0.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "canvas-sketch-cli": "^1.15.0",
+    "typescript": "^5"
+  }
+}

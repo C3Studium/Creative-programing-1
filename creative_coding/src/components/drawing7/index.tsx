@@ -67,7 +67,7 @@ export default function Drawing7() {
         // const bins = [8, 16, 32, 64, 128, 252, 512, 1024]
 
         let bin, mapped;
-        let bins = [{}] as { bass: number, mid: number, high: number }[];
+        let bins = [{}] as { bass: number, mid: number, high: number, spectrum: number }[];
 
         const numCircles = 10;
         const numSlices = 1;

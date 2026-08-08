@@ -72,7 +72,7 @@ export default function Drawing8() {
         dampingFactor: number;
         scale: number
 
-        constructor(params: { x: number, y: number, r: number, vx: number, vy: number, ax: number, ay: number, color: string, minDis: number, pushFactor: number, ix: number, iy: number, fx: number, fy: number }) {
+        constructor(params: { x: number, y: number, r?: number, vx?: number, vy?: number, ax?: number, ay?: number, color?: string, minDis?: number, pushFactor?: number, ix?: number, iy?: number, fx?: number, fy?: number }) {
             // position
             this.x = params.x
             this.y = params.y

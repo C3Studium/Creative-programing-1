@@ -86,7 +86,7 @@ export default function Drawing11() {
         colA: string;
         colMap: (t: number) => string;
 
-        constructor(params: { x: number, y: number, r: number, vx: number, vy: number, ax: number, ay: number, color: string, minDis: number, pushFactor: number, ix: number, iy: number, fx: number, fy: number, colA: string, colMap: any }) {
+        constructor(params: { x: number, y: number, r?: number, vx?: number, vy?: number, ax?: number, ay?: number, color?: string, minDis?: number, pushFactor?: number, ix?: number, iy?: number, fx?: number, fy?: number, colA?: string, colMap: (t: number) => string }) {
             // position
             this.x = params.x
             this.y = params.y
@@ -118,7 +118,7 @@ export default function Drawing11() {
 
             this.scale = 1
 
-            this.colA = params.colA
+            this.colA = params.colA || ""
             this.color = this.colA
 
             this.colMap = params.colMap

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Navbar from "@/components/navbar";
 import Drawing9 from "@/components/drawing9";
 
 export default function Sketch15() {
@@ -8,7 +7,6 @@ export default function Sketch15() {
       <Head>
         <title>Sketch 15 — drawing9</title>
       </Head>
-      <Navbar />
       <Drawing9 />
     </>
   );

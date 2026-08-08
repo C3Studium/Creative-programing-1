@@ -19,6 +19,13 @@
     font-size: 12px;
     line-height: 1;
 
+    .divider {
+        align-self: stretch;
+        width: 1px;
+        margin: 0 4px;
+        background: rgba(0, 0, 0, 0.12);
+    }
+
     .link {
         display: flex;
         align-items: center;
@@ -40,6 +47,11 @@
         &.active {
             background: #171717;
             color: #fff;
+        }
+
+        &.home {
+            padding: 0 9px;
+            letter-spacing: 0.02em;
         }
     }
 }

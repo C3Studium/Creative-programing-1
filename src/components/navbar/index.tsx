@@ -30,10 +30,26 @@ export default function Navbar() {
   return (
     <nav
       className={styles.nav}
+      aria-label="Sketches"
       // drawing5-7 toggle their audio on any mousedown that reaches the window,
       // so clicking a link would start the track on the way out. Stop it here.
       onMouseDown={(e) => e.stopPropagation()}
     >
+      <Link
+        href="/"
+        title="home"
+        aria-current={pathname === "/" ? "page" : undefined}
+        className={
+          pathname === "/"
+            ? `${styles.link} ${styles.home} ${styles.active}`
+            : `${styles.link} ${styles.home}`
+        }
+      >
+        home
+      </Link>
+
+      <span className={styles.divider} aria-hidden="true" />
+
       {sketches.map((name, i) => {
         const href = `/sketches/${name}`;
         const isActive = pathname === href;
@@ -43,6 +59,7 @@ export default function Navbar() {
             key={name}
             href={href}
             title={name}
+            aria-current={isActive ? "page" : undefined}
             className={isActive ? `${styles.link} ${styles.active}` : styles.link}
           >
             {i + 1}

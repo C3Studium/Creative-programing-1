@@ -1,6 +1,6 @@
 # Creative Programming
 
-[Live demo]() <!-- paste the deployed URL between the () when it's up -->
+[Live demo]()
 
 This is my Canvas API playground. Every sketch here exists because I wanted to understand one specific thing — how particles behave when a pull force and a push force fight over them, what a letter looks like once you read it back as pixels, how you turn an FFT into something worth looking at. Nothing here is a product and nothing is finished, which is the point: it's where I learn by making the thing rather than reading about it. Drawing to a canvas is the part of web work that interests me most right now, and I'm a fan of KLSR-style audio+visual work — where the sound and the image are built together instead of one decorating the other. This repo is me collecting the pieces I'd need to work that way.
 
@@ -39,27 +39,29 @@ Every sketch is a React component with a `<canvas>` and a `useEffect`. Grouped b
 
 **Image-sampled particles**
 
-- [drawing11](creative_coding/src/components/drawing11/index.tsx) — the ring particle system again, except each particle takes its color and radius from the pixel underneath it in `img1.png`, then interpolates toward that same pixel in `img2.png` as the cursor pushes it away.
+- [drawing11](creative_coding/src/components/drawing11/index.tsx) — the ring particle system again, except each particle takes its color and radius from the pixel underneath it in
 
 **Exporting** — most sketches listen for `Cmd/Ctrl + S` to export the current frame, and `Cmd/Ctrl + A` to toggle recording: it captures the canvas at 30fps and converts the webm to mp4 in the browser with ffmpeg.wasm. Click the canvas first so it has focus.
 
 ## Demos
 
-<!-- Slot 1 — drawing11: image-sampled particles, cursor pushing them between img1 and img2 -->
 
-<!-- Slot 2 — drawing7: audio-reactive arcs, bass/mid/high bands -->
 
-<!-- Slot 3 — drawing5 or drawing6: audio-reactive concentric rings -->
 
-<!-- Slot 4 — drawing9 or drawing10: cursor-repelled particle rings with colormap -->
 
-<!-- Slot 5 — page5: letter rebuilt as an ASCII glyph grid -->
 
-<!-- Slot 6 — drawing1: riso-colored skewed rects clipped to a triangle -->
 
-<!-- Slot 7 — page4: noise grid with Tweakpane controls -->
+https://github.com/user-attachments/assets/3593cebe-fa27-4063-8681-d80060f6b8f5
 
-<!-- Slot 8 — drawing3 / drawing4: noise-displaced quadratic curves -->
+https://github.com/user-attachments/assets/8ed6e38d-cc75-4d5d-b812-caa9b01f8204
+<img width="2100" height="2100" alt="288177" src="https://github.com/user-attachments/assets/3ce43766-c352-48d1-8101-6a9fab6daebc" />
+<img width="2100" height="2100" alt="2026 07 08-10 12 45" src="https://github.com/user-attachments/assets/caba6770-85ea-444e-93a8-3e37f4858fec" />
+<img width="2100" height="2100" alt="2026 07 10-10 35 19" src="https://github.com/user-attachments/assets/128aa4eb-1d04-4294-86d6-0f3c541d10c7" />
+<img width="2100" height="2100" alt="63873" src="https://github.com/user-attachments/assets/4c2f1c67-44c0-4f23-9feb-e07b229a3784" />
+<img width="2100" height="2100" alt="453475 (2)" src="https://github.com/user-attachments/assets/ab130013-30f9-43c5-9ba3-bd4a4e20d834" />
+
+
+
 
 ## Stack & how to run
 

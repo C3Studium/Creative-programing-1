@@ -1,0 +1,49 @@
+// Same pill treatment as the navbar so the two read as one system, and light
+// enough to stay legible over both the white and the black sketches.
+.hint {
+    position: fixed;
+    bottom: 16px;
+    z-index: 10;
+
+    padding: 7px 11px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px;
+    line-height: 1;
+    color: #555;
+
+    // The audio sketches start on a click landing on the canvas, so the hints
+    // must never swallow it.
+    pointer-events: none;
+    user-select: none;
+}
+
+.refreshHint {
+    composes: hint;
+    left: 16px;
+}
+
+.audioHint {
+    composes: hint;
+    right: 16px;
+    color: #171717;
+}
+
+.key {
+    font-size: 13px;
+    color: #171717;
+}
+
+// Both hints sit on the bottom edge; on narrow screens they would overlap, so
+// stack the audio one above the refresh one instead.
+@media (max-width: 620px) {
+    .audioHint {
+        bottom: 51px;
+        right: 16px;
+        left: 16px;
+    }
+}

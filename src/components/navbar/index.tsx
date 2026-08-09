@@ -24,8 +24,13 @@ export const sketches = [
   "drawing11",
 ];
 
+// drawing5-7 build their visuals from live audio data, so nothing moves until
+// the track is playing. Everything else animates on mount.
+export const audioSketches = ["drawing5", "drawing6", "drawing7"];
+
 export default function Navbar() {
-  const { pathname } = useRouter();
+  const router = useRouter();
+  const { pathname } = router;
 
   return (
     <nav
@@ -66,6 +71,18 @@ export default function Navbar() {
           </Link>
         );
       })}
+
+      <span className={styles.divider} aria-hidden="true" />
+
+      <button
+        type="button"
+        title="restart the animation"
+        aria-label="Restart the animation"
+        className={`${styles.link} ${styles.refresh}`}
+        onClick={() => router.reload()}
+      >
+        ⟳
+      </button>
     </nav>
   );
 }

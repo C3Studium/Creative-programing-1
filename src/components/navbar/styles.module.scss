@@ -53,5 +53,24 @@
             padding: 0 9px;
             letter-spacing: 0.02em;
         }
+
+        // <button>, not <a>, so it needs the browser chrome stripped back off.
+        &.refresh {
+            border: 0;
+            background: none;
+            font: inherit;
+            font-size: 15px;
+            cursor: pointer;
+
+            // re-stated because .link:hover and .link.refresh tie on
+            // specificity, and .refresh wins on source order.
+            &:hover {
+                background: rgba(0, 0, 0, 0.07);
+            }
+
+            &:active {
+                transform: rotate(90deg);
+            }
+        }
     }
 }

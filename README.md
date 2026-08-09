@@ -1,6 +1,6 @@
 # Creative Programming
 
-[Live demo]()
+[Live demo](https://creative-programing-1.vercel.app/)
 
 This is my Canvas API playground. Every sketch here exists because I wanted to understand one specific thing — how particles behave when a pull force and a push force fight over them, what a letter looks like once you read it back as pixels, how you turn an FFT into something worth looking at. Nothing here is a product and nothing is finished, which is the point: it's where I learn by making the thing rather than reading about it. Drawing to a canvas is the part of web work that interests me most right now, and I'm a fan of KLSR-style audio+visual work — where the sound and the image are built together instead of one decorating the other. This repo is me collecting the pieces I'd need to work that way.
 

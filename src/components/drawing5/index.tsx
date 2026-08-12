@@ -164,7 +164,7 @@ export default function Drawing5() {
 
         if (!audioRef.current) {
             audioRef.current = document.createElement("audio");
-            audioRef.current.src = "/MP3/SUB8ION - Oneosune - Neon.mp3";
+            audioRef.current.src = "/MP3/FLAMEBOY - Machine - Instrumental version.mp3";
         }
 
         // this is how we setup the audio config

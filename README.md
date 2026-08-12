@@ -37,6 +37,8 @@ Every sketch is a React component with a `<canvas>` and a `useEffect`. Grouped b
 - [drawing6](creative_coding/src/components/drawing6/index.tsx) — 20 rings, each with a random number of slices.
 - [drawing7](creative_coding/src/components/drawing7/index.tsx) — 10 rings, with bins split into bass, mid and high bands; the band decides how far each arc sweeps.
 
+All three run on *Machine (Instrumental version)* by FLAMEBOY — royalty-free and licensed through [Artlist](https://artlist.io/royalty-free-music/song/machine-instrumental-version/6001260), so nothing here gets copyright-claimed.
+
 **Image-sampled particles**
 
 - [drawing11](creative_coding/src/components/drawing11/index.tsx) — the ring particle system again, except each particle takes its color and radius from the pixel underneath it in
